@@ -136,7 +136,7 @@ func main() {
 	r.HandleFunc("/health", FetchServerHealth).Methods("GET")
 	r.Use(loggingMiddleware)
 
-	log.Println("Starting Event Trigger Server. Listening on port 4004 ...")
+	log.Println("Starting Hasura Segment Source Server. Listening on port 4004 ...")
 	err := http.ListenAndServe(":4004", r)
 
 	if err != nil {
