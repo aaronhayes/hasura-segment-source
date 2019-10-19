@@ -56,7 +56,7 @@ func FetchServerHealth(w http.ResponseWriter, r *http.Request) {
 
 func WebhookHandler(w http.ResponseWriter, r *http.Request) {
 	segmentWriteKey, segmentWriteKeyExists := os.LookupEnv("SEGMENT_WRITE_API_KEY")
-	userIdKey, userIdKeyExists := os.LookupEnv("EVENT_TRIGGER_USER_ID_KEY")
+	userIdKey, userIdKeyExists := os.LookupEnv("USER_ID_FIELD")
 
 	if !segmentWriteKeyExists {
 		log.Println("Poorly Configured Server - Missing Segment Write Key")
