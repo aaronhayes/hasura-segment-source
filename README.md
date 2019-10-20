@@ -33,7 +33,7 @@ Hasura Segment Source has a few configuration you need to setup.
 ## Deploying
 ### Docker-compose
 
-```
+```yaml
 version: '3.6'
 services:
   # PostgreSQL database
