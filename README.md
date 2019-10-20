@@ -71,7 +71,7 @@ services:
       - 4004:4004
     environemnt:
       - SEGMENT_WRITE_API_KEY: 'YOUR_SEGMENT_WRITE_KEY'
-      - USER_ID_FIELD= 'user_id'
+      - USER_ID_FIELD: 'user_id'
 
 ```
 
