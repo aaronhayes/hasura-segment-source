@@ -57,8 +57,7 @@ services:
       - '8080:8080'
     depends_on:
       - postgres
-      - auth # Auth Webhook
-      - pricefinder # Remote Schema
+      - hasura-segment-source
     environment:
       HASURA_GRAPHQL_ENABLE_CONSOLE: 'true'
       HASURA_SEGMENT_SOURCE_WEBHOOK_URL: 'http://hasura-segment-source:4004/webhook'
